@@ -1,0 +1,33 @@
+https://medium.com/@ryan.mcnierney/using-react-google-sheets-as-your-cms-294c02561d59
+https://medium.com/@mheavers/storing-form-data-from-a-website-in-google-spreadsheets-using-javascript-react-a15aeb9143cb
+React-GoogleSheets-master
+Step 1: Create Your Sheet. When you create a blank spreadsheet in Google Sheet, you can get its ID from URL
+1Nw3UOKfCNLBk8hdu5tnmEyw_mDJWzhTF7qZcx_SYkrE
+
+Step 2: Enable the Sheets API
+https://console.developers.google.com/apis/library/sheets.googleapis.com
+
+Step 3: Create an API Key
+Open the Credentials page in the Google Developers API Console. Click on Create Credentials > API key
+
+Use this key in your application by passing it with the key=API_KEY parameter.	AIzaSyDfx14quJi6YKcYE_qE7GxVZmDDmtRCDho
+
+For testing, you may not want to restrict the key at this time
+
+Step 4: Generate an OAUTH Client ID
+From the Credentials page in the API Console, Click Create Credentials > OAUTH Client ID and choose Web Application . Give the application any name (e.g. myproject).
+
+Applicaton Name 	: reactSheetAPI
+Client ID 			: 555384816571-0veg5o5fl5h6jdo5epdkvkdq1fbk4ljg.apps.googleusercontent.com
+Client Secret 		: pMHJlyeNSPgAK75a67RD3Yyu
+
+Step 4: Make that submit button do something	define param
+
+Step 5: Initialize the API
+	componentDidMount
+	handleClientLoad
+	this.initClient
+	
+Step 6: Include the Google Sheets API codebase	
+
+https://stackoverflow.com/questions/43751318/gapi-is-not-defined-when-loading-react-component
