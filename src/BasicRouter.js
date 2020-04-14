@@ -12,7 +12,8 @@ import Dashboard from "./views/Dashboard.js"
 import Contact from "./views/Contact.js"
 import InstaSearch from "./views/InstaSearch.js"
 import SheetAPI from "./views/SheetAPI.js"
-
+import SheetCMS from "./views/SheetCMS.js"
+import SheetAPIV4 from "./views/SheetAPIV4.js"
 /*
 This site has multiple pages, all of which are rendered dynamically in the browser (not server rendered).
 Although the page does not ever refresh, notice how React Router keeps the URL up to date as you navigate
@@ -32,6 +33,8 @@ export default function BasicRouter() {
 					<li><Link to="/Contact">Contact</Link></li>
 					<li><Link to="/InstaSearch">InstaSearch</Link></li>
 					<li><Link to="/SheetAPI">SheetAPI</Link></li>
+					<li><Link to="/SheetCMS">SheetCMS</Link></li>
+					<li><Link to="/SheetAPIV4">SheetAPIV4</Link></li>
 				</ul>
 				<hr />
 				{/*
@@ -46,6 +49,8 @@ export default function BasicRouter() {
 					<Route path="/Contact"><Contact /></Route>
 					<Route path="/InstaSearch"><InstaSearch /></Route>
 					<Route path="/SheetAPI"><SheetAPI /></Route>
+					<Route path="/SheetCMS"><SheetCMS /></Route>
+					<Route path="/SheetAPIV4"><SheetAPIV4 /></Route>
 				</Switch>
 			</div>
 		</Router>

@@ -1,0 +1,18 @@
+https://stackoverflow.com/questions/32076503/using-postman-to-access-oauth-2-0-google-apis
+
+getpostman
+Oauth Client
+ID:		555384816571-hmkhjl0bch0plis67n7psb38nm1i4u4l.apps.googleusercontent.com
+secret: 	flxTFXNPZXx2xqhxfPkMbZj9
+
+
+
+sheet to web
+https://docs.google.com/spreadsheets/d/e/2PACX-1vTvmkWZKpvlLIbDsIbBzcRBRoJ330Fpd-V0qf8dIvShYiooawFuvZrdqLY77tME9F_67N-HKesSKlQe/pubhtml
+https://docs.google.com/spreadsheets/d/1Nw3UOKfCNLBk8hdu5tnmEyw_mDJWzhTF7qZcx_SYkrE/edit#gid=0
+
+https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/index-speech-to-text
+https://www.techradar.com/news/best-speech-to-text-app
+https://www.lifewire.com/best-speech-to-text-software-4688519
+https://speechnotes.co
+https://medium.com/mfec/สรุป-speech-to-text-และ-text-to-speech-ภาษาไทย-aa79e205c4b1

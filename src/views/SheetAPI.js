@@ -69,8 +69,16 @@ export default class ContactForm extends React.Component {
 				onSubmit={this.onFormSubmit}
 				>
 				<label>
-					First name:
-					<Text field='name' />
+					ID:
+					<Text field='ID' />
+				</label>				
+				<label>
+					Name:
+					<Text field='Name' />
+				</label>				
+				<label>
+					Tel:
+					<Text field='Tel' />
 				</label>
 				<button type='submit'>
 					Submit

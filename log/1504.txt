@@ -1,0 +1,6 @@
+https://www.sarahdrydenpeterson.com/javascript-spreadsheet/google-sheets-api-html-form-data-to-google-sheet-7/
+https://css-tricks.com/creating-an-editable-webpage-with-google-spreadsheets-and-tabletop-js/
+https://stackoverflow.com/questions/43930322/react-fetch-google-api
+https://github.com/googleapis/google-auth-library-nodejs
+https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+https://levelup.gitconnected.com/google-sheets-api-tutorial-with-javascript-588f581aa1d9

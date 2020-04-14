@@ -1,0 +1,25 @@
+react app cannot read page source (using chrome extension instead)
+https://stackoverflow.com/questions/55402563/why-cant-react-elements-be-seen-with-view-source
+
+https://getbootstrap.com/docs/4.0/components/collapse/
+
+https://stackoverflow.com/questions/31362021/npm-start-vs-node-app-js
+
+เพิ่มสิทธิในการเข้าสัมนาใหม่ใน 3 ปี ถัดไป
+รับสลิปโอนเงินออนไลน์
+แจ้งใบเสร็จออนไลน์
+
+embbed font
+	https://fonts.google.com/
+	https://stackoverflow.com/questions/14676613/how-to-import-google-web-font-in-css-file
+	
+combine file
+	https://morpheusdata.com/blog/2017-08-20-consolidation-how-to-combine-html-content-in-nodejs
+	module.exports = 
+		{
+		...require('./math/add'),
+		...require('./math/sub')
+		}
+
+https://code.tutsplus.com/tutorials/understanding-nested-routing-in-react--cms-27955
+Vhttps://9gag.com/gag/aQ1L5je
