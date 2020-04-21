@@ -5,6 +5,13 @@ import {
 	Route,
 	Link
 	} from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {Button,
+		NavDropdown,
+		Navbar,
+		Nav,
+		FormControl,
+		Form} from 'react-bootstrap';	
 /*Pinned : insert additonal path(s) here*/
 import Home from "./views/Home.js"	
 import About from "./views/About.js"
@@ -14,6 +21,8 @@ import InstaSearch from "./views/InstaSearch.js"
 import SheetAPI from "./views/SheetAPI.js"
 import SheetCMS from "./views/SheetCMS.js"
 import SheetAPIV4 from "./views/SheetAPIV4.js"
+import SimpleSearch from "./views/SimpleSearch.js"
+import Login from "./views/Login.js"
 /*
 This site has multiple pages, all of which are rendered dynamically in the browser (not server rendered).
 Although the page does not ever refresh, notice how React Router keeps the URL up to date as you navigate
@@ -23,20 +32,43 @@ work properly.
 
 export default function BasicRouter() {
 	return (
-		<Router>
-			<div>
-				<ul>
-					{/*Pinned : insert additonal link(s) here*/}
-					<li><Link to="/">Home</Link></li>
-					<li><Link to="/About">About</Link></li>
-					<li><Link to="/Dashboard">Dashboard</Link></li>
-					<li><Link to="/Contact">Contact</Link></li>
-					<li><Link to="/InstaSearch">InstaSearch</Link></li>
-					<li><Link to="/SheetAPI">SheetAPI</Link></li>
-					<li><Link to="/SheetCMS">SheetCMS</Link></li>
-					<li><Link to="/SheetAPIV4">SheetAPIV4</Link></li>
-				</ul>
-				<hr />
+		<Router>						
+			<Navbar bg="light" expand="lg">
+				<Navbar.Brand href="/Home">React-Windows</Navbar.Brand>
+			<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Collapse id="basic-navbar-nav">
+					<Nav className="mr-auto">
+						<Nav.Link href="/......["
+									target="_blank" 
+									onClick={(event) => {
+										event.preventDefault(); 
+										window.open(
+											window.location.origin + 
+												"/Contact", 
+												'_blank', 
+												'toolbar=0,location=0,menubar=0'
+												);
+										}}>
+								Contact
+							</Nav.Link>
+						<Nav.Link href="/About">About</Nav.Link>
+						<Nav.Link href="/Dashboard">Dashboard</Nav.Link>
+						<Nav.Link href="/Login">Login</Nav.Link>
+							<NavDropdown title="Link" id="basic-nav-dropdown">
+								<NavDropdown.Item href="/InstaSearch">InstaSearch</NavDropdown.Item>
+								<NavDropdown.Item href="/SimpleSearch">SimpleSearch</NavDropdown.Item>
+								<NavDropdown.Divider />
+								<NavDropdown.Item href="/SheetCMS">SheetCMS</NavDropdown.Item>
+								<NavDropdown.Item href="/SheetAPI">SheetAPI</NavDropdown.Item>
+								<NavDropdown.Item href="/SheetAPIV4">SheetAPIV4</NavDropdown.Item>
+							</NavDropdown>
+					</Nav>
+				<Form inline>
+					<FormControl type="text" placeholder="Search" className="mr-sm-2" />
+						<Button variant="outline-success">Search</Button>
+				</Form>
+				</Navbar.Collapse>
+			</Navbar>				
 				{/*
 				A <Switch> looks through all its children <Route>elements and renders the first one whose pathmatches the current URL. 
 				Use a <Switch> any time you have multiple routes, but you want only oneof them to render at a time
@@ -51,8 +83,10 @@ export default function BasicRouter() {
 					<Route path="/SheetAPI"><SheetAPI /></Route>
 					<Route path="/SheetCMS"><SheetCMS /></Route>
 					<Route path="/SheetAPIV4"><SheetAPIV4 /></Route>
+					<Route path="/SimpleSearch"><SimpleSearch /></Route>
+					<Route path="/Login"><Login /></Route>
 				</Switch>
-			</div>
+				<hr/>	
 		</Router>
 		);
 	}

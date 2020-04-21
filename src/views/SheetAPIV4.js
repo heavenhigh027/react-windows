@@ -7,6 +7,7 @@ class SheetAPIV4 extends React.Component {
 	updateSheetValues = () => {
 		fetch('https://sheets.googleapis.com/v4/spreadsheets/1Nw3UOKfCNLBk8hdu5tnmEyw_mDJWzhTF7qZcx_SYkrE:batchUpdate', {
 			method: "POST",
+			key: "AIzaSyDfx14quJi6YKcYE_qE7GxVZmDDmtRCDho",
 			headers: {
 				"Content-Type": "application/json",
 				//update this token with yours. 

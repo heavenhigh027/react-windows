@@ -1,5 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import picPic from './../files/Opera-9 2.png';
 /*
 	1.	import React from 'react' and declare class App extends React.Component
 	2.	import {Component} from 'react' and declare class App extends Component
@@ -14,7 +14,7 @@ class Contact extends React.Component {
 		this.setState({inputText: e.target.value});
 		}
 	handleSubmit = () => {
-		alert(`Quoteth Shakespeare, "You cad! ${this.state.inputText}"`);
+		alert('Quoteth Shakespeare, "You cad! ${this.state.inputText}"');
 		}
 	handleMouse = (e) => {
 		this.setState({ mouseX: e.screenX, mouseY: e.screenY });
@@ -36,7 +36,7 @@ class Contact extends React.Component {
 				</form>		
 				<div>
 					<img
-						src="doggo.jpeg"
+						src={picPic}
 						onMouseMove={this.handleMouse} 
 					/>									{/* 🖱️ mouse movement */}
 					{this.state.mouseX}px / {this.state.mouseY}px
