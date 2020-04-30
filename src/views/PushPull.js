@@ -7,11 +7,10 @@ import {
     } from "react-router-dom";
 import {Button} from 'react-bootstrap';    
 
-export default function About() {   
+export default function PushPull() {   
     return (
         <div>
             <Button onClick={window.close()}>About</Button> 
         </div>
         );
     };
-    

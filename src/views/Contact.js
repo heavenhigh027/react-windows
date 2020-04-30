@@ -25,7 +25,7 @@ class Contact extends React.Component {
 		}	
 	render() {
 		return (
-			<div>	
+			<div>
 				<input
 					onChange={this.handleInput}  
 					value={this.state.inputText}
