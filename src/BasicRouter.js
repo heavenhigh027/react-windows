@@ -24,6 +24,7 @@ import PushPull from "./views/PushPull.js"
 import SimpleSearch from "./views/SimpleSearch.js"
 import Login from "./views/Login.js"
 import ClientLog from "./views/ClientLog.js"
+import Seminar from "./views/Seminar.js"
 /*
 This site has multiple pages, all of which are rendered dynamically in the browser (not server rendered).
 Although the page does not ever refresh, notice how React Router keeps the URL up to date as you navigate
@@ -32,7 +33,7 @@ work properly.
 */
 
 export default function BasicRouter() {
-	useEffect(() => {
+	useEffect(() => {/*
 		const timer = setTimeout(() => {
 			window.open(
 				'www.google.com',
@@ -41,7 +42,7 @@ export default function BasicRouter() {
 				);
 		}, 3000);
 		return () => clearTimeout(timer);
-	  }, []);
+	*/}, []);
 	return (
 		<Router>						
 			<Navbar bg="light" expand="lg">
@@ -66,6 +67,7 @@ export default function BasicRouter() {
 							<NavDropdown title="Link" id="basic-nav-dropdown">
 								<NavDropdown.Item href="/InstaSearch">InstaSearch</NavDropdown.Item>
 								<NavDropdown.Item href="/SimpleSearch">SimpleSearch</NavDropdown.Item>
+								<NavDropdown.Item href="/Seminar">Seminar</NavDropdown.Item>
 								<NavDropdown.Divider />
 								<NavDropdown.Item href="/SheetCMS">SheetCMS</NavDropdown.Item>
 								<NavDropdown.Item href="/SheetAPIV4">SheetAPIV4</NavDropdown.Item>
@@ -107,6 +109,7 @@ export default function BasicRouter() {
 					<Route path="/SimpleSearch"><SimpleSearch /></Route>
 					<Route path="/Login"><Login /></Route>
 					<Route path="/ClientLog"><ClientLog /></Route>
+					<Route path="/Seminar"><Seminar /></Route>
 				</Switch>
 				<hr/>	
 		</Router>

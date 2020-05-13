@@ -30,11 +30,11 @@ function SimpleSearch() {
         placeholder="Search"
         value={searchTerm}
         onChange={handleChange}
-      />
+        />
       <ul>
         {searchResults.map(item => (
           <li>{item}</li>
-        ))}
+          ))}
       </ul>
     </div>
     );
